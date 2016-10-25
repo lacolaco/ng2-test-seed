@@ -9,6 +9,9 @@
         "emitDecoratorMetadata": true,
         "lib": [
             "es2015", "dom"
+        ],
+        "types": [
+            "jasmine"
         ]
     },
     "awesomeTypeScriptLoaderOptions": {
