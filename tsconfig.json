@@ -11,6 +11,7 @@
             "es2015", "dom"
         ],
         "types": [
+            "node",
             "jasmine"
         ]
     },
