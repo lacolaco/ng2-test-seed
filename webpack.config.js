@@ -1,10 +1,12 @@
+const path = require('path');
+
 module.exports = () => {
     return {
         entry: {
-            main: './src/main.ts'
+            main: path.resolve(__dirname, './src/main.ts')
         },
         output: {
-            path: './dist',
+            path: path.resolve(__dirname, './dist'),
             filename: '[name].bundle.js'
         },
         resolve: {
@@ -21,7 +23,7 @@ module.exports = () => {
                 },
                 {
                     test: /\.html$/,
-                    loader: 'raw'
+                    loader: 'raw-loader'
                 }
             ]
         },
